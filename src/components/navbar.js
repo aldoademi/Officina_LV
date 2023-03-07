@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
+import Logo from "../assets/Logo.jpg";
+import hamburger from "../assets/hamburger.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +13,17 @@ function Navbar() {
 
   return (
     <nav className="nav">
-      <Link to="/">Officina Mobile</Link>
-      <ul className={`nav-list ${isOpen ? "mobile" : ""}`}>
+      <Link to="/" className="logo-link">
+        <img src={Logo} alt="Officina Mobile Logo" className="logo" />
+      </Link>
+
+      {/* Aggiungi l'icona del menu */}
+      {/* <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleDropdown}>
+      <img src={hamburger} alt="Officina Mobile Logo" className="logo" />
+      </div> */}
+
+      {/* Aggiungi la lista di navigazione */}
+      <ul className={`nav-list ${isOpen ? "hidden" : ""}`}>
         <li className={`nav-item ${isOpen ? "mobile" : ""}`}>
           <Link to="/">Home</Link>
         </li>
@@ -26,7 +37,7 @@ function Navbar() {
           <Link to="/contatti">Contatti</Link>
         </li>
         <li className={`nav-button ${isOpen ? "mobile" : ""}`}>
-          <Link onClick={() => window.location.href = "tel:+393279974508"}>Chiama Ora</Link>
+          <Link onClick={() => window.location.href = "tel:+391234567899"}>Chiama Ora</Link>
         </li>
       </ul>
     </nav>
