@@ -23,23 +23,26 @@ function Navbar() {
       </div> */}
 
       {/* Aggiungi la lista di navigazione */}
-      <ul className={`nav-list ${isOpen ? "hidden" : ""}`}>
-        <li className={`nav-item ${isOpen ? "mobile" : ""}`}>
-          <Link to="/">Home</Link>
-        </li>
-        <li className={`nav-item ${isOpen ? "mobile" : ""}`}>
-          <Link to="/servizi">Servizi</Link>
-        </li>
-        <li className={`nav-item ${isOpen ? "mobile" : ""}`}>
-          <Link to="/chisiamo">Chi siamo</Link>
-        </li>
-        <li className={`nav-item ${isOpen ? "mobile" : ""}`}>
-          <Link to="/contatti">Contatti</Link>
-        </li>
-        <li className={`nav-button ${isOpen ? "mobile" : ""}`}>
-          <Link onClick={() => window.location.href = "tel:+391234567899"}>Chiama Ora</Link>
-        </li>
-      </ul>
+      <div className="nav-wrapper">
+        <h1 className="nav-title"> Officina Mobile LV </h1>
+          <ul className={`nav-list ${isOpen ? "hidden" : ""}`}>
+            <li className={`nav-item ${isOpen ? "mobile" : ""}`}>
+              <Link to="/">Home</Link>
+            </li>
+            <li className={`nav-item ${isOpen ? "mobile" : ""}`}>
+              <Link to="/servizi">Servizi</Link>
+            </li>
+            <li className={`nav-item ${isOpen ? "mobile" : ""}`}>
+              <Link to="/chisiamo">Chi siamo</Link>
+            </li>
+            <li className={`nav-item ${isOpen ? "mobile" : ""}`}>
+              <Link to="/contatti">Contatti</Link>
+            </li>
+            <li className={`nav-button ${isOpen ? "mobile" : ""}`}>
+              <Link onClick={() => window.location.href = "tel:+391234567899"}>Chiama Ora</Link>
+            </li>
+          </ul>
+      </div>
     </nav>
   );
 }

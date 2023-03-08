@@ -12,7 +12,7 @@ function Contact() {
       <h2 className="contact-title">Contatti</h2>
       <p className="contact-description">
         Per richiedere un preventivo o per qualsiasi altra informazione, non
-        esitate a contattarci.
+        esitate a contattarmi.
       </p>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="contact-form-group">

@@ -1,7 +1,7 @@
 .nav {
-  background-color: #5e71c5;
+  /* background-color: #5e71c5; */
+  background-image: url("../assets/wave2.svg");
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -13,6 +13,27 @@
   padding: 0;
   display: flex;
   gap: 1rem;
+  margin-top: 20px;
+  position: absolute;
+  top: 115px;
+  right: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+.nav-title{
+    font-family: "Aref Ruqaa", serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
 }
 
 .nav-item {
@@ -21,6 +42,7 @@
 
 .nav-button {
   font-weight: bold;
+  margin-right: 15px;
 }
 
 .nav-button2 {
@@ -109,6 +131,32 @@ a:hover {
 
 /* Visualizzazione da Mobile */
 @media (max-width: 768px) {
+  .nav {
+    /* background-color: #5e71c5; */
+    background-image: url("../assets/wave2.svg");
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    height: 50px;
+  }
+
+  .logo {
+    max-width: 75px;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+  .nav-title{
+      font-family: "Aref Ruqaa", serif;
+      font-weight: bold;
+      text-align: center;
+      font-size: 22px;
+      color: rgb(0, 255, 255);
+      text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  }
+
   /* Nascondere la lista di navigazione */
   .nav-list {
     display: none;

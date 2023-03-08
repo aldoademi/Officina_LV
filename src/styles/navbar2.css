@@ -1,26 +1,257 @@
-.navbar {
-    background-color: #5e71c5;
+.nav{
+  background-image: url("../assets/wave2.svg");
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+nav li{
+  line-height: 28px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+nav .animation{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 8px;
+  z-index: 0;
+  transition: all .5s ease 0s;
+}
+
+li:nth-child(1){
+  width: 100px;
+}
+li:nth-child(2){
+  width: 110px;
+}
+li:nth-child(3){
+  width: 100px;
+}
+li:nth-child(4){
+  width: 160px;
+}
+li:nth-child(5){
+  width: 120px;
+}
+
+nav.start-home, li:nth-child(1):hover{
+  width: 100px;
+  left: 0;
+  background-color: green;
+}
+
+nav.start-home, li:nth-child(2):hover{
+  width: 110px;
+  left: 100;
+  background-color: #1abc9c;
+}
+
+nav.start-home, li:nth-child(3):hover{
+  width: 100px;
+  left: 210;
+  background-color: #1abc9c;
+}
+
+nav.start-home, li:nth-child(4):hover{
+  width: 160px;
+  left: 310;
+  background-color: #1abc9c;
+}
+
+nav.start-home, li:nth-child(5):hover{
+  width: 120px;
+  left: 470;
+  background-color: #1abc9c;
+}
+
+body{
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+span{
+  color: #2bd6b4;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+  position: absolute;
+  top: 115px;
+  right: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+.nav-title{
+    font-family: "Aref Ruqaa", serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+.nav-item {
+  font-weight: bold;
+}
+
+.nav-button {
+  font-weight: bold;
+}
+
+.nav-button2 {
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333333;
+}
+
+.nav-link:hover {
+  color: #666666;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-right: 1rem;
+}  
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu--open {
+  position: static;
+  display: block;
+  width: 100%;
+}
+
+.dropdown-toggle {
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle:hover {
+  color: #666666;
+}
+
+.dropdown-toggle--hidden {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #333333;
+}
+
+.dropdown-link:hover {
+  color: #666666;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+
+/* Visualizzazione da Mobile */
+@media (max-width: 768px) {
+  .nav {
+    /* background-color: #5e71c5; */
+    background-image: url("../assets/wave2.svg");
     display: flex;
     align-items: center;
     padding: 1rem;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    height: 50px;
   }
-  
-  .logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  
+
   .logo {
-    max-width: 100px;
+    max-width: 75px;
     height: auto;
     margin-right: 1rem;
   }
-  
-  .logo-name {
-    color: #ffffff;
-    font-size: 1.5rem;
-    margin: 0;
+
+  @import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa');
+  .nav-title{
+      font-family: "Aref Ruqaa", serif;
+      font-weight: bold;
+      text-align: center;
+      font-size: 22px;
+      color: rgb(0, 255, 255);
+      text-shadow: rgb(0, 0, 0) 2px 2px 2px;
   }
-  
+
+  /* Nascondere la lista di navigazione */
+  .nav-list {
+    display: none;
+  }
+
+  /* Mostrare l'icona del menu */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Nascondere l'icona del menu quando la lista di navigazione è aperta */
+  .menu-icon.open {
+    display: none;
+  }
+
+  /* Mostrare la lista di navigazione quando l'icona del menu viene cliccata */
+  .nav-list.hidden {
+    display: block;
+  }
+}
+
