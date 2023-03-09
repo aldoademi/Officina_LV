@@ -1,5 +1,5 @@
 import React from "react";
-import companyLogo from "../assets/Logo.jpg";
+import companyLogo from "../assets/Logo.svg";
 import "../styles/ChiSiamo.css";
 
 function ChiSiamo() {
