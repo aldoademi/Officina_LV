@@ -2,9 +2,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1b2430;
+    background: #9c6319;
     padding: 28.6px 35px;                               /* Modifica altezza navbar */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.938);
   }
   #navbar {
     display: flex;
@@ -27,7 +27,7 @@ nav {
   }
   #navbar li a:hover,
   #navbar li a.active {
-    color: #17cf97;
+    color: #472d0b;
   }
   
   #navbar li a:hover::after,
@@ -35,7 +35,7 @@ nav {
     content: "";
     width: 30%;
     height: 2px;
-    background: #17cf97;
+    background: #472d0b;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -61,7 +61,7 @@ nav {
       right: -300px;
       width: 300px;
       height: 100vh;
-      background: #2a3239;
+      background: #9c6319;
       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
       padding: 40px 0 0 0px;                                    /* Modifica dimensioni menù hamburger*/
       transition: 0.3s ease-in-out;
