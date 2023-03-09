@@ -52,15 +52,14 @@ class Navbar4 extends Component {
               className={this.state.clicked ? "#navbar active" : "#navbar"}
             >
               <li>
-                <a
+                <Link to="/"
                   className={
                     this.state.activeLink === "home" ? "active" : "" // impostare la classe "active" se il link è attivo
                   }
-                  href="/"
                   onClick={() => this.setActiveLink("home")} // impostare il link attivo al click
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to="/servizi"
@@ -95,13 +94,23 @@ class Navbar4 extends Component {
                     Contatta ora
                   </Link>
                 ) : (
-                  <a href="tel:+391234567899" className="active">
+                  <Link to="tel:+391234567899" className={
+                    this.state.activeLink === "contatti" ? "active" : ""
+                  }>
                     Chiama ora
-                  </a>
+                  </Link>
                 )}
               </li>
             </ul>
           </div>
+
+          <div id="mobile" onClick={this.handleClick}>
+              <i
+                id="bar"
+                className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+              ></i>
+            </div>
+
           </nav>
         </>
       );
