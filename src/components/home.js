@@ -5,11 +5,15 @@ function Home() {
   return (
     <>
       <div className="home">
-        <h1>Benvenuti in Officina Mobile LV</h1>
+        <div className="titolo">
+          <h1>Officina Mobile LV</h1>
+        </div>
+      </div>
+      <div className="paragrafo">
         <p>
-        Offriamo servizi di riparazione e manutenzione di veicoli a domicilio.
-        Siamo a vostra disposizione per interventi urgenti o programmabili.
-      </p>
+          Offriamo servizi di riparazione e manutenzione di veicoli a domicilio.
+          Siamo a vostra disposizione per interventi urgenti o programmabili.
+        </p>
       </div>
     </>
   );
