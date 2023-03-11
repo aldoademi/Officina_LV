@@ -38,10 +38,34 @@ h1 {
   color: #fff;
 }
 
-/* p {
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 1.5;
-  max-width: 600px;
-  margin-bottom: 40px;
-} */
+@media (max-width: 768px) {
+  .home {
+    background-position: center center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .titolo {
+    background-color: rgba(156, 99, 25, 0.829);
+    border: 2px solid #fff;
+    width: 220px; /* Imposta la larghezza del box di testo */
+    height: 150px; /* Imposta l'altezza del box di testo */
+    display: flex;
+    align-items: center; /* Centra il testo verticalmente */
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .paragrafo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+}
