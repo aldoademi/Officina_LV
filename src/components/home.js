@@ -6,7 +6,7 @@ function Home() {
     <>
       <div className="home">
         <div className="titolo">
-          <h1>Officina Mobile LV</h1>
+          <h1>Officina Meccanica Mobile LV</h1>
         </div>
       </div>
       <div className="paragrafo">
